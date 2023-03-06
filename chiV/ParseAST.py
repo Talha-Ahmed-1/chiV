@@ -20,14 +20,14 @@ class ParseAST:
             elif "Input" in i or "Output" in i or "Inout" in i:
                 if  "Width" in data[data.index(i)+1]:
                     port_name = i.split(" ")[11][:-1]
-                    port_type = i.split(" ")[10]
+                    port_type = i.split(" ")[10][:-1]
                     MSB = int(data[data.index(i)+2].split(" ")[15])
                     LSB = int(data[data.index(i)+3].split(" ")[15])
                     width = MSB - LSB + 1
                     self.portlist[self.module_name][port_name] = [port_type, width]
                 else:
                     port_name = i.split(" ")[11][:-1]
-                    port_type = i.split(" ")[10]
+                    port_type = i.split(" ")[10][:-1]
                     width = 1
                     self.portlist[self.module_name][port_name] = [port_type, width]
 
