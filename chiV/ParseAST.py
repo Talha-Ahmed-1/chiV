@@ -6,7 +6,7 @@ class ParseAST:
         self.modules = set()
 
     def parser(self, filename):
-        file = open("test.ast", "r")
+        file = open(filename, "r")
         data = file.readlines()
         file.close()
 
@@ -43,8 +43,8 @@ class ParseAST:
     def get_modules(self):
         return self.modules
     
-parser = ParseAST()
-parser.parser("test.ast")
+# parser = ParseAST()
+# parser.parser("test.ast")
 # print(parser.get_top_module())
 # print(parser.get_portlist())
 # print(parser.get_instances())

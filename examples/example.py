@@ -1,13 +1,13 @@
 import sys, os
 
-ROOT = os.path.join(os.getcwd(), "../chiV")
+ROOT = os.path.join(os.getcwd(),     "chiV")
 sys.path.insert(0, ROOT)
 
 from ParseAST import ParseAST
 from BlackBoxGen import BlackBoxGen
 
 parser = ParseAST()
-parser.parser("test.ast")
+parser.parser("/home/talha/chiV/examples/test.ast")
 module = parser.get_top_module()
 portlist = parser.get_portlist()
 
