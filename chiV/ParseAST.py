@@ -45,7 +45,7 @@ class ParseAST:
     
 parser = ParseAST()
 parser.parser("test.ast")
-print(parser.get_top_module())
-print(parser.get_portlist())
-print(parser.get_instances())
-print(parser.get_modules())
+# print(parser.get_top_module())
+# print(parser.get_portlist())
+# print(parser.get_instances())
+# print(parser.get_modules())

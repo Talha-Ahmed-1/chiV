@@ -26,11 +26,11 @@ class BlackBoxGen:
         return bb
         
 
-portlist = {'top': {'rd': ['Inout', 1], 'rs1': ['Input', 1], 'rs2': ['Input', 1], 'write_enable': ['Input', 32], 'ready': ['Output', 8]}}
+# portlist = {'top': {'rd': ['Inout', 1], 'rs1': ['Input', 1], 'rs2': ['Input', 1], 'write_enable': ['Input', 32], 'ready': ['Output', 8]}}
 
-gen = BlackBoxGen()
-a = gen.gen_bb("top", portlist)
+# gen = BlackBoxGen()
+# a = gen.gen_bb("top", portlist)
 # a = gen.gen_ports(portlist)
 # a = gen.gen_bundles(portlist)
-for i in a:
-    print(i)
+# for i in a:
+#     print(i)
