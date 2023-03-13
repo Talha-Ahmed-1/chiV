@@ -39,7 +39,7 @@ class ParseAST:
                     self.portlist[self.module_name][port_name] = [port_type, width]
 
     def get_top_module(self):
-        return self.modules - self.instances
+        return list(self.modules - self.instances)
     
     def get_portlist(self):
         return self.portlist
@@ -48,7 +48,7 @@ class ParseAST:
         return self.instances
     
     def get_modules(self):
-        return self.modules
+        return list(self.modules)
     
     def get_paramlist(self):
         return self.paramlist
