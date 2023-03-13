@@ -1,4 +1,4 @@
-module top
+module top #(parameter acha = 97, parameter theek = 0.6, parameter kya = "")
   (
    input CLK, 
    input RST,
