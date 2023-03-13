@@ -1,3 +1,4 @@
+# TODO: Add support for parameters in module
 class BlackBoxGen:
     def gen_ports(self, portlist):
         bundles = []
