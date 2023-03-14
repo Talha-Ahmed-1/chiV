@@ -1,10 +1,10 @@
-module top #(parameter acha = 97, parameter theek = 0.6, parameter kya = "")
+module top #(parameter DW = 31, parameter theek = 0.6, parameter kya = "hello")
   (
    input CLK, 
    input RST,
    input enable,
    input [31:0] value,
-   output [7:0] led
+   output [acha:theek] led
   );
   reg [31:0] count;
   reg [7:0] state;
